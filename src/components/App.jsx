@@ -11,6 +11,7 @@ export default function App (){
     Bad: 0,
   });
 
+
   const handleFeedback = (feedbackType) => {
     setFeedbacks((prevFeedbacks) => ({
       ...prevFeedbacks,
@@ -18,6 +19,7 @@ export default function App (){
     }));
   };
 
+  
   const totalFeedback = () => {
     return feedbacks.Good + feedbacks.Neutral + feedbacks.Bad;
   };
